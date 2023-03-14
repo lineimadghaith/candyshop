@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CupCup_official website</title>
+<script src="app.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav>
+        <ul>
+        <br><br>
+        <br><br>
+            <li><a href="#">Home</a></li>
+        <br><br>
+            <li class="dropdown "><a href="#">Shop<span>&rsaquo;</span></a>
+                <ul>
+                    <li class="dropdown-two"><a href="#">Candy types<span>&rsaquo;</span></a>
+                        <ul>
+                            <li><a href="lolli.html">Lollipops</a></li>
+                            <li><a href="mello.html">Marshmello</a></li>
+                            <li><a href="ice.html">Ice cream</a></li>
+                            <li><a href="jelly.html">Jelly candy</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-three"><a href="#">Candy colors<span>&rsaquo;</span></a>
+                        <ul>
+                            <li><a href="black.html">Black</a></li>
+                            <li><a href="blue.html">Blue</a></li>
+                            <li><a href="gold.html">Gold</a></li>
+                            <li><a href="yellow.html">Yellow</a></li>
+                            <li><a href="red.html">Red</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-four"><a href="#">Candy flavors<span>&rsaquo;</span></a>
+                        <ul>
+                            <li><a href="fruity.html">Fruity</a></li>
+                            <li><a href="caramel.html">Caramel</a></li>
+                            <li><a href="strawberry.html">Strawberry</a></li>
+                            <li><a href="lemon.html">Lemon</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-five"><a href="#">Holiday candy<span>&rsaquo;</span></a>
+                        <ul>
+                            <li><a href="christmas.html">Christmas</a></li>
+                            <li><a href="halloween.html">Halloween</a></li>
+                            <li><a href="valentine.html">Valentine</a></li>
+                            <li><a href="easter.html">Easter</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="sugarfree.html">Sugar free candy</a></li>
+                </ul>
+            </li>
+            <br><br>
+            <li><a href="index2.html">Visit us</a></li>
+        </ul>
+    </nav>
+<style>
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height:100%;
+    background: linear-gradient(to top right, #80cbc4, #e1bee7,#80ddea, #d1c4e9);
+}
+nav {
+    width:250px;
+    position: absolute;
+    top:0;
+    bottom:0;
+    background: rgba(0,0,0,0.1);
+    border-radius:10px;
+    box-shadow:5px 7px 10px rgba(0,0,0,.5)
+}
+nav ul{
+    position: relative;
+    list-style-type: none;
+}
+nav ul li a{
+    display: flex;
+    align-items: center;
+    font-family: arial;
+    font-size: 1.15em;
+    text-decoration: none;
+    text-transform: capitalize;
+    color:#000;
+    padding: 10px 30px;
+    height: 50px;
+    transition: .5s ease;
+    border-radius: 0 30px;
+}
+nav ul li a:hover{
+    background: rgba(0,0,0,.7);
+    color: #fff;
+}
+nav ul ul{
+    position: absolute;
+    left:250px;
+    width:250px;
+    top:0;
+    display: none;
+    background: rgba(155,39,176,.4);
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+nav ul span{
+    position: absolute;
+    right:20px;
+    font-size: 1.5em;
+}
+nav ul .dropdown{
+    position: relative;
+}
+nav ul .dropdown:hover > ul{
+    display:initial;
+}
+.logo{
+    border-width: 2cm ;
+    border-color: beige;
+    border-radius: 50%;
+    width:8%;
+    position: sticky;
+    bottom: 85%;
+    left:50%;
+  }
+nav ul .dropdown-two ul {
+    position: absolute;
+    left:250px;
+    top:0;
+}
+nav ul .dropdown-two:hover ul{
+    display: initial;
+}
+nav ul .dropdown-three ul {
+    position: absolute;
+    left:250px;
+    top:0;
+}
+nav ul .dropdown-three:hover ul{
+    display: initial;
+}
+nav ul .dropdown-four ul {
+    position: absolute;
+    left:250px;
+    top:0;
+}
+nav ul .dropdown-four:hover ul{
+    display: initial;
+}
+nav ul .dropdown-five ul {
+    position: absolute;
+    left:250px;
+    top:0;
+}
+nav ul .dropdown-five:hover ul{
+    display: initial;
+}
+.im1{
+    width:40%;
+    height: auto;
+    position: absolute;
+    left:35%;
+    top:20%;
+}
+h3{
+    font-size: 200%;
+    position: absolute;
+    top:90%;
+    color:rgba(56, 7, 65, 0.8);
+    text-shadow: 4px 2px 4px rgba(155, 39, 176, 0.288);
+}
+h1{
+    font-size: 600%;
+    position: static;
+    text-align: center;
+    background-color: #6d6767;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: #865bd6 0px 3px 3px;
+    font-style: italic;
+}
+.im1{
+    position: absolute;
+    left:50%;
+    top:45%;
+    border-color: #9b9797;
+    border-style: double;
+    border-width: 0.5cm;
+}
+.h21{
+    position: absolute;
+    top:50%;
+    left:20%;
+    color:#6d6767;
+    opacity: 0.3;
+    font-size: 400%;
+    font-style: italic;
+}
+.h22{
+    position: absolute;
+    top:60%;
+    left:30%;
+    color:#6d6767;
+    opacity: 0.5;
+    font-size: 400%;
+    font-style: italic;
+}
+.h23{
+    position: absolute;
+    top:70%;
+    left:25%;
+    color:#6d6767;
+    opacity: 0.3;
+    font-size: 400%;
+    font-style: italic;
+}
+.h24{
+    position: absolute;
+    top:80%;
+    left:27%;
+    color:#6d6767;
+    opacity: 0.3;
+    font-size: 400%;
+    font-style: italic;
+}
+</style>
+
+<div class="container">
+    <div class="cart">
+        <i class="fa fa-shopping-cart"></i>
+        <span class="count">0</span>
+    </div>
+</div>
+
+<style>
+.fa-shopping-cart{
+    font-size: 250%;
+}
+.container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.cart-btn{
+    padding:16px 32px;
+    border: none;
+    border-radius: 4px;
+    background-color:#9f88cb;
+    color:#efefef;
+    text-transform: uppercase;
+    cursor:pointer;
+    outline:none;
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.3);
+    transition: all ease 0.5%;
+    position: absolute;
+    left:53%;
+    bottom: 15%;
+    margin: 14px;
+}
+.count{
+    position: absolute;
+    height:20px;
+    width:20px;
+    display:inline-flex;
+    top:0;
+    left:100%;
+    transform: translate(-50%, -50%);
+    background-color:#6a4f9c;
+    justify-content: center;
+    align-items: center;
+    color:#212121;
+    font-size: 14px;;
+    border-radius: 400px;
+    transition: all ease 1%;
+    z-index:1
+}
+.cart{
+    position: absolute;
+    right:3%;
+    top:0;
+    margin:auto;
+    border-radius: 4px;
+    height:60px;
+    width:60px;
+    display: flex;
+    justify-content: center;
+    background-color: #efefef;
+    margin:15px;
+    font-size: 20px;
+    background-color:#6a4f9c;
+    color:#efefef
+}
+.count{
+    position: absolute;
+    height:30px;
+    width:30px;
+    background-color:#6a4f9c;
+    border-radius: 500px;
+    font-size: 14px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    top:6px;
+    left:31px;
+    color:#fff;
+    transform: translate(50%, -50%);
+    z-index: 1;
+}
+.btn{
+    padding: 16px 32px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4caf50;
+    color: #ffffff;
+    text-transform: uppercase;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+    transition: all ease 05s;
+    position: absolute;
+    bottom: 10px;
+    left:50%;
+    transform: translateX(-50%);
+    
+}
+</style>
+<script>
+    $(document).ready(function(){
+    var cartCountValue = null;
+    var cartCount = $('.cart .count');
+    $(cartCount).text(cartCountValue);
+
+    $('.cart-btn').on('click', function(){
+        var cartBtn = this;
+        var cartCountPosition= $(cartCount).offset();
+        var btnPosition = $(this).offset();
+        var leftPos =
+        cartCountPosition.left < btnPosition.left
+        ? btnPosition.left - (btnPosition.left - cartCountPosition.left)
+        : cartCountPosition.left;
+
+        var topPos =
+        cartCountPosition.top < btnPosition.top
+        ? cartCountPosition.top
+        :cartCountPosition.top;
+        $(cartBtn)
+        .append("<span class='count'>1</span>");
+
+        $(cartBtn).find(".count").each(function(i, count){
+            $(count).offset({
+                left:leftPos,
+                top:topPos
+            })
+            .animate(
+            {
+                opcity:0
+            }, 
+            800,
+            function(){
+                $(this).remove();
+                cartCountValue++;
+                $(cartCount).text(cartCountValue);
+            }
+            );
+        });
+});
+});
+</script>
+<img class="logo" src="general pic/cupcup.jpeg">
+<h3>CupCup</h3>
+<h1>Welcome to CupCup :)</h1>
+<h2 class="h21">Candy</h2>
+<h2 class="h22">Candy</h2>
+<h2 class="h23">Candy</h2>
+<h2 class="h24">!!!!</h2>
+<!--<img class="im1" src="im1.jpg">-->
+<img class="im1" src="general pic/im1.jpg">
+</body>
+</html>

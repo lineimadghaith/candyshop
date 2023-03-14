@@ -1,0 +1,1279 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CupCup_official website</title>
+<script src="app.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav>
+        <ul>
+        <br><br>
+        <br><br>
+            <li><a href="index.html">Home</a></li>
+        <br><br>
+            <li class="dropdown "><a href="#">Shop<span>&rsaquo;</span></a>
+                <ul>
+                    <li class="dropdown-two"><a href="#">Candy types<span>&rsaquo;</span></a>
+                        <ul>
+                            <li><a href="lolli.html">Lollipops</a></li>
+                            <li><a href="mello.html">Marshmello</a></li>
+                            <li><a href="ice.html">Ice cream</a></li>
+                            <li><a href="#">Jelly candy</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-three"><a href="#">Candy colors<span>&rsaquo;</span></a>
+                        <ul>
+                            <li><a href="black.html">Black</a></li>
+                            <li><a href="blue.html">Blue</a></li>
+                            <li><a href="gold.html">Gold</a></li>
+                            <li><a href="yellow.html">Yellow</a></li>
+                            <li><a href="red.html">Red</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-four"><a href="#">Candy flavors<span>&rsaquo;</span></a>
+                        <ul>
+                            <li><a href="fruity.html">Fruity</a></li>
+                            <li><a href="caramel.html">Caramel</a></li>
+                            <li><a href="strawberry.html">Strawberry</a></li>
+                            <li><a href="lemon.html">Lemon</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-five"><a href="#">Holiday candy<span>&rsaquo;</span></a>
+                        <ul>
+                            <li><a href="christmas.html">Christmas</a></li>
+                            <li><a href="halloween.html">Halloween</a></li>
+                            <li><a href="valentine.html">Valentine</a></li>
+                            <li><a href="easter.html">Easter</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="sugarfree.html">Sugar free candy</a></li>
+                </ul>
+            </li>
+            <br><br>
+            <li><a href="index2.html">Visit us</a></li>
+        </ul>
+    </nav>
+<style>
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height:100%;
+    background: linear-gradient(to top right, #80cbc4, #e1bee7,#80ddea, #d1c4e9);
+}
+nav {
+    width:250px;
+    position: absolute;
+    top:0;
+    bottom:0;
+    background: rgba(0,0,0,0.1);
+    border-radius:10px;
+    box-shadow:5px 7px 10px rgba(0,0,0,.5)
+}
+nav ul{
+    position: relative;
+    list-style-type: none;
+}
+nav ul li a{
+    display: flex;
+    align-items: center;
+    font-family: arial;
+    font-size: 1.15em;
+    text-decoration: none;
+    text-transform: capitalize;
+    color:#000;
+    padding: 10px 30px;
+    height: 50px;
+    transition: .5s ease;
+    border-radius: 0 30px;
+}
+nav ul li a:hover{
+    background: rgba(0,0,0,.7);
+    color: #fff;
+}
+nav ul ul{
+    position: absolute;
+    left:250px;
+    width:250px;
+    top:0;
+    display: none;
+    background: rgba(155,39,176,.4);
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+nav ul span{
+    position: absolute;
+    right:20px;
+    font-size: 1.5em;
+}
+nav ul .dropdown{
+    position: relative;
+}
+nav ul .dropdown:hover > ul{
+    display:initial;
+}
+.logo{
+    border-width: 2cm ;
+    border-color: beige;
+    border-radius: 50%;
+    width:8%;
+    position: sticky;
+    bottom: 85%;
+    left:50%;
+  }
+nav ul .dropdown-two ul {
+    position: absolute;
+    left:250px;
+    top:0;
+}
+nav ul .dropdown-two:hover ul{
+    display: initial;
+}
+nav ul .dropdown-three ul {
+    position: absolute;
+    left:250px;
+    top:0;
+}
+nav ul .dropdown-three:hover ul{
+    display: initial;
+}
+nav ul .dropdown-four ul {
+    position: absolute;
+    left:250px;
+    top:0;
+}
+nav ul .dropdown-four:hover ul{
+    display: initial;
+}
+nav ul .dropdown-five ul {
+    position: absolute;
+    left:250px;
+    top:0;
+}
+nav ul .dropdown-five:hover ul{
+    display: initial;
+}
+.im1{
+    width:40%;
+    height: auto;
+    position: absolute;
+    left:35%;
+    top:20%;
+}
+h3{
+    font-size: 200%;
+    position: absolute;
+    top:90%;
+    color:rgba(56, 7, 65, 0.8);
+    text-shadow: 4px 2px 4px rgba(155, 39, 176, 0.288);
+}
+.jelly1{
+    position:absolute;
+    top: 250%;
+    left:20%;
+    border: #000 solid 1px;
+    background-color: #fff;
+    padding-top: 0.2%;padding-left: 1%;padding-right: 1%;padding-bottom: 5%;
+}
+.jelly1:hover{
+    transform: scale(.9);
+}
+.jelly2{
+    position:absolute;
+    bottom: 20%;
+    left:50%;
+    border: #000 solid 1px;
+    background-color: #fff;
+    padding-top: 0.2%;padding-left: 1%;padding-right: 1%;padding-bottom: 5%;
+}
+.jelly2:hover{
+    transform: scale(.9);
+}
+.jelly3{
+    position:absolute;
+    bottom: 20%;
+    left:80%;
+    border: #000 solid 1px;
+    background-color: #fff;
+    padding-top: 0.2%;padding-left: 1%;padding-right: 1%;padding-bottom: 5%;
+}
+.jelly3:hover{
+    transform: scale(.9);
+}
+.jelly4{
+    position:absolute;
+    top: 100%;
+    left:20%;
+    border: #000 solid 1px;
+    background-color: #fff;
+    padding-top: 0.2%;padding-left: 1%;padding-right: 1%;padding-bottom: 5%;
+}
+.jelly4:hover{
+    transform: scale(.9);
+}
+.jelly5{
+    position:absolute;
+    top: 100%;
+    left:50%;
+    border: #000 solid 1px;
+    background-color: #fff;
+    padding-top: 0.2%;padding-left: 1%;padding-right: 1%;padding-bottom: 5%;
+}
+.jelly5:hover{
+    transform: scale(.9);
+}
+.jelly6{
+    position:absolute;
+    top: 100%;
+    left:80%;
+    border: #000 solid 1px;
+    background-color: #fff;
+    padding-top: 0.2%;padding-left: 1%;padding-right: 1%;padding-bottom: 5%;
+}
+.jelly6:hover{
+    transform: scale(.9);
+}
+.jelly7{
+    position:absolute;
+    top: 150%;
+    left:20%;
+    border: #000 solid 1px;
+    background-color: #fff;
+    padding-top: 0.2%;padding-left: 1%;padding-right: 1%;padding-bottom: 5%;
+}
+.jelly7:hover{
+    transform: scale(.9);
+}
+.jelly8{
+    position:absolute;
+    top: 150%;
+    left:50%;
+    border: #000 solid 1px;
+    background-color: #fff;
+    padding-top: 0.2%;padding-left: 1%;padding-right: 1%;padding-bottom: 5%;
+}
+.jelly8:hover{
+    transform: scale(.9);
+}
+.jelly9{
+    position:absolute;
+    top: 150%;
+    left:80%;
+    border: #000 solid 1px;
+    background-color: #fff;
+    padding-top: 0.2%;padding-left: 1%;padding-right: 1%;padding-bottom: 5%;
+}
+.jelly9:hover{
+    transform: scale(.9);
+}
+.jelly10{
+    position:absolute;
+    top: 200%;
+    left:20%;
+    border: #000 solid 1px;
+    background-color: #fff;
+    padding-top: 0.2%;padding-left: 1%;padding-right: 1%;padding-bottom: 5%;
+}
+.jelly10:hover{
+    transform: scale(.9);
+}
+.jelly11{
+    position:absolute;
+    top: 200%;
+    left:50%;
+    border: #000 solid 1px;
+    background-color: #fff;
+    padding-top: 0.2%;padding-left: 1%;padding-right: 1%;padding-bottom: 5%;
+}
+.jelly11:hover{
+    transform: scale(.9);
+}
+.jelly12{
+    position:absolute;
+    top: 200%;
+    left:80%;
+    border: #000 solid 1px;
+    background-color: #fff;
+    padding-top: 0.2%;padding-left: 1%;padding-right: 1%;padding-bottom: 5%;
+}
+.jelly12:hover{
+    transform: scale(.9);
+}
+h1{
+    font-size: 900%;
+    position: static;
+    text-align: center;
+    background-color: rgba(155,39,176,.4);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: #d1c4e9 0px 3px 3px;
+    font-style: italic;
+}
+h2{
+    font-size: 200%;
+    position: absolute;
+    left:65%;
+    font-style: italic ;
+    color: rgba(155,39,176,.4);
+    text-shadow: #000 1px 1px 1px;
+}
+h5{
+    opacity:0.2;
+    position: absolute;
+    left:20%;
+    top:50%;
+    font-size: 300%;
+    color:#6a4f9c
+}
+.h41{
+    position: absolute;
+    left:57%;
+    bottom: 25%;
+}
+.h42{
+    position: absolute;
+    left:87%;
+    bottom: 25%;
+}
+.h43{
+    position: absolute;
+    left:27%;
+    top: 130%;
+}
+.h44{
+    position: absolute;
+    left:57%;
+    top: 130%;
+}
+.h45{
+    position: absolute;
+    left:87%;
+    top:130%;
+}
+.h46{
+    position: absolute;
+    left:27%;
+    top: 180%;
+}
+.h47{
+    position: absolute;
+    left:57%;
+    top:180%;
+}
+.h48{
+    position: absolute;
+    left:87%;
+    top: 180%;
+}
+.h49{
+    position: absolute;
+    left:27%;
+    top: 230%;
+}
+.h410{
+    position: absolute;
+    left:57%;
+    top: 230%;
+}
+.h411{
+    position: absolute;
+    left:87%;
+    top: 230%;
+}
+.h412{
+    position: absolute;
+    left:27%;
+    top: 280%;
+}
+.p1{
+    position: absolute;
+    left:57%;
+    bottom: 22%;
+    color: #6a4f9c;
+}
+.p2{
+    position: absolute;
+    left:87%;
+    bottom: 22%;
+    color: #6a4f9c;
+}
+.p3{
+    position: absolute;
+    left:27%;
+    top: 133%;
+    color: #6a4f9c;
+}
+.p4{
+    position: absolute;
+    left:57%;
+    top: 133%;
+    color: #6a4f9c;
+}
+.p5{
+    position: absolute;
+    left:87%;
+    top: 133%;
+    color: #6a4f9c;
+}
+.p6{
+    position: absolute;
+    left:27%;
+    top: 183%;
+    color: #6a4f9c;
+}
+.p7{
+    position: absolute;
+    left:57%;
+    top: 183%;
+    color: #6a4f9c;
+}
+.p8{
+    position: absolute;
+    left:87%;
+    top: 183%;
+    color: #6a4f9c;
+}
+.p9{
+    position: absolute;
+    left:27%;
+    top: 233%;
+    color: #6a4f9c;
+}
+.p10{
+    position: absolute;
+    left:57%;
+    top: 233%;
+    color: #6a4f9c;
+}
+.p11{
+    position: absolute;
+    left:87%;
+    top: 233%;
+    color: #6a4f9c;
+}
+.p12{
+    position: absolute;
+    left:27%;
+    top: 283%;
+    color: #6a4f9c;
+}
+</style>
+</body>
+<img class="logo" src="general pic/cupcup.jpeg">
+<h3>CupCup</h3>
+<h1>Jelly Candy</h1>
+<h2>Center</h2>
+<h5>Candy!! <br>Give me candyy</h5>
+<img class="jelly1" src="jelly/jelly1.jpeg">
+<img class="jelly2" src="jelly/jelly2.jpeg">
+<img class="jelly3" src="jelly/jelly3.jpeg">
+<img class="jelly4" src="jelly/jelly4.jpeg">
+<img class="jelly5" src="jelly/jelly5.jpeg">
+<img class="jelly6" src="jelly/jelly6.jpeg">
+<img class="jelly7" src="jelly/jelly7.jpeg">
+<img class="jelly8" src="jelly/jelly8.jpeg">
+<img class="jelly9" src="jelly/jelly9.jpeg">
+<img class="jelly10" src="jelly/jelly10.jpeg">
+<img class="jelly11" src="jelly/jelly11.jpeg">
+<img class="jelly12" src="jelly/jelly12.jpeg">
+
+<div class="container">
+    <div class="products-container">
+        <img class="jelly1" src="jelly/jelly1.jpeg">
+    </div>
+    <div class="products-container">
+        <img class="jelly2" src="jelly/jelly2.jpeg">
+    </div>
+    <div class="products-container">
+        <img class="jelly3" src="jelly/jelly3.jpeg">
+    </div>
+    <div class="products-container">
+        <img class="jelly4" src="jelly/jelly4.jpeg">
+    </div>
+    <div class="products-container">
+        <img class="jelly5" src="jelly/jelly5.jpeg">
+    </div>
+    <div class="products-container">
+        <img class="jelly6" src="jelly/jelly6.jpeg">
+    </div>
+    <div class="products-container">
+        <img class="jelly7" src="jelly/jelly7.jpeg">
+    </div>
+    <div class="products-container">
+        <img class="jelly8" src="jelly/jelly8.jpeg">
+    </div>
+    <div class="products-container">
+        <img class="jelly9" src="jelly/jelly9.jpeg">
+    </div>
+    <div class="products-container">
+        <img class="jelly10" src="jelly/jelly10.jpeg">
+    </div>
+    <div class="products-container">
+        <img class="jelly11" src="jelly/jelly11.jpeg">
+    </div>
+    <div class="products-container">
+        <img class="jelly12" src="jelly/jelly12.jpeg">
+    </div>
+</div>
+
+<div class="container">
+    <div class="box">
+        <img class="jelly2" src="jelly/jelly2.jpeg">
+        <h4 class="h41">2.00$</h4>
+        <button class="cart-btn">Add to cart</button>
+    </div>
+    <div class="box">
+        <img class="jelly3" src="jelly/jelly3.jpeg">
+        <h4 class="h42">3.00$</h4>
+        <button class="cart-btn2">Add to cart</button>
+    </div>
+    <div class="box">
+        <img class="jelly4" src="jelly/jelly4.jpeg">
+        <h4 class="h43">1.00$</h4>
+        <button class="cart-btn3">Add to cart</button>
+    </div>
+    <div class="box">
+        <img class="jelly5" src="jelly/jelly5.jpeg">
+        <h4 class="h44">2.00$</h4>
+        <button class="cart-btn4">Add to cart</button>
+    </div>
+    <div class="box">
+        <img class="jelly6" src="jelly/jelly6.jpeg">
+        <h4 class="h45">3.00$</h4>
+        <button class="cart-btn5">Add to cart</button>
+    </div>
+    <div class="box">
+        <img class="jelly7" src="jelly/jelly7.jpeg">
+        <h4 class="h46">3.00$</h4>
+        <button class="cart-btn6">Add to cart</button>
+    </div>
+    <div class="box">
+        <img class="jelly8" src="jelly/jelly8.jpeg">
+        <h4 class="h47">3.00$</h4>
+        <button class="cart-btn7">Add to cart</button>
+    </div>
+    <div class="box">
+        <img class="jelly9" src="jelly/jelly9.jpeg">
+        <h4 class="h48">2.00$</h4>
+        <button class="cart-btn8">Add to cart</button>
+    </div>
+    <div class="box">
+        <img class="jelly10" src="jelly/jelly10.jpeg">
+        <h4 class="h49">3.00$</h4>
+        <button class="cart-btn9">Add to cart</button>
+    </div>
+    <div class="box">
+        <img class="jelly11" src="jelly/jelly11.jpeg">
+        <h4 class="h410">2.00$</h4>
+        <button class="cart-btn10">Add to cart</button>
+    </div>
+    <div class="box">
+        <img class="jelly12" src="jelly/jelly12.jpeg">
+        <h4 class="h411">1.00$</h4>
+        <button class="cart-btn11">Add to cart</button>
+    </div>
+    <div class="box">
+        <img class="jelly1" src="jelly/jelly1.jpeg">
+        <h4 class="h412">1.00$</h4>
+        <button class="cart-btn12">Add to cart</button>
+    </div>
+
+    
+    <div class="cart">
+        <i class="fa fa-shopping-cart"></i>
+        <span class="count">0</span>
+    </div>
+</div>
+
+<style>
+.fa-shopping-cart{
+    font-size: 250%;
+}
+.container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.cart-btn{
+    padding:16px 32px;
+    border: none;
+    border-radius: 4px;
+    background-color:#9f88cb;
+    color:#efefef;
+    text-transform: uppercase;
+    cursor:pointer;
+    outline:none;
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.3);
+    transition: all ease 0.5%;
+    position: absolute;
+    left:53%;
+    bottom: 15%;
+    margin: 14px;
+}
+.cart-btn2{
+    padding:16px 32px;
+    border: none;
+    border-radius: 4px;
+    background-color:#9f88cb;
+    color:#efefef;
+    text-transform: uppercase;
+    cursor:pointer;
+    outline:none;
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.3);
+    transition: all ease 0.5%;
+    position: absolute;
+    left:83%;
+    bottom: 15%;
+    margin: 14px;
+}
+.cart-btn3{
+    padding:16px 32px;
+    border: none;
+    border-radius: 4px;
+    background-color:#9f88cb;
+    color:#efefef;
+    text-transform: uppercase;
+    cursor:pointer;
+    outline:none;
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.3);
+    transition: all ease 0.5%;
+    position: absolute;
+    left:23%;
+    top: 132%;
+    margin: 14px;
+}
+.cart-btn4{
+    padding:16px 32px;
+    border: none;
+    border-radius: 4px;
+    background-color:#9f88cb;
+    color:#efefef;
+    text-transform: uppercase;
+    cursor:pointer;
+    outline:none;
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.3);
+    transition: all ease 0.5%;
+    position: absolute;
+    left:53%;
+    top: 132%;
+    margin: 14px;
+}
+.cart-btn5{
+    padding:16px 32px;
+    border: none;
+    border-radius: 4px;
+    background-color:#9f88cb;
+    color:#efefef;
+    text-transform: uppercase;
+    cursor:pointer;
+    outline:none;
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.3);
+    transition: all ease 0.5%;
+    position: absolute;
+    left:83%;
+    top: 132%;
+    margin: 14px;
+}
+.cart-btn6{
+    padding:16px 32px;
+    border: none;
+    border-radius: 4px;
+    background-color:#9f88cb;
+    color:#efefef;
+    text-transform: uppercase;
+    cursor:pointer;
+    outline:none;
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.3);
+    transition: all ease 0.5%;
+    position: absolute;
+    left:23%;
+    top: 182%;
+    margin: 14px;
+}
+.cart-btn7{
+    padding:16px 32px;
+    border: none;
+    border-radius: 4px;
+    background-color:#9f88cb;
+    color:#efefef;
+    text-transform: uppercase;
+    cursor:pointer;
+    outline:none;
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.3);
+    transition: all ease 0.5%;
+    position: absolute;
+    left:53%;
+    top: 182%;
+    margin: 14px;
+}
+.cart-btn8{
+    padding:16px 32px;
+    border: none;
+    border-radius: 4px;
+    background-color:#9f88cb;
+    color:#efefef;
+    text-transform: uppercase;
+    cursor:pointer;
+    outline:none;
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.3);
+    transition: all ease 0.5%;
+    position: absolute;
+    left:83%;
+    top: 182%;
+    margin: 14px;
+}
+.cart-btn9{
+    padding:16px 32px;
+    border: none;
+    border-radius: 4px;
+    background-color:#9f88cb;
+    color:#efefef;
+    text-transform: uppercase;
+    cursor:pointer;
+    outline:none;
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.3);
+    transition: all ease 0.5%;
+    position: absolute;
+    left:23%;
+    top: 232%;
+    margin: 14px;
+}
+.cart-btn10{
+    padding:16px 32px;
+    border: none;
+    border-radius: 4px;
+    background-color:#9f88cb;
+    color:#efefef;
+    text-transform: uppercase;
+    cursor:pointer;
+    outline:none;
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.3);
+    transition: all ease 0.5%;
+    position: absolute;
+    left:53%;
+    top: 232%;
+    margin: 14px;
+}
+.cart-btn11{
+    padding:16px 32px;
+    border: none;
+    border-radius: 4px;
+    background-color:#9f88cb;
+    color:#efefef;
+    text-transform: uppercase;
+    cursor:pointer;
+    outline:none;
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.3);
+    transition: all ease 0.5%;
+    position: absolute;
+    left:83%;
+    top: 232%;
+    margin: 14px;
+}
+.cart-btn12{
+    padding:16px 32px;
+    border: none;
+    border-radius: 4px;
+    background-color:#9f88cb;
+    color:#efefef;
+    text-transform: uppercase;
+    cursor:pointer;
+    outline:none;
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.3);
+    transition: all ease 0.5%;
+    position: absolute;
+    left:23%;
+    top: 282%;
+    margin: 14px;
+}
+.count{
+    position: absolute;
+    height:20px;
+    width:20px;
+    display:inline-flex;
+    top:0;
+    left:100%;
+    transform: translate(-50%, -50%);
+    background-color:#6a4f9c;
+    justify-content: center;
+    align-items: center;
+    color:#212121;
+    font-size: 14px;;
+    border-radius: 400px;
+    transition: all ease 1%;
+    z-index:1
+}
+.cart{
+    position: absolute;
+    right:3%;
+    top:0;
+    margin:auto;
+    border-radius: 4px;
+    height:60px;
+    width:60px;
+    display: flex;
+    justify-content: center;
+    background-color: #efefef;
+    margin:15px;
+    font-size: 20px;
+    background-color:#6a4f9c;
+    color:#efefef
+}
+.count{
+    position: absolute;
+    height:30px;
+    width:30px;
+    background-color:#6a4f9c;
+    border-radius: 500px;
+    font-size: 14px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    top:6px;
+    left:31px;
+    color:#fff;
+    transform: translate(50%, -50%);
+    z-index: 1;
+}
+.btn{
+    padding: 16px 32px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4caf50;
+    color: #ffffff;
+    text-transform: uppercase;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+    transition: all ease 05s;
+    position: absolute;
+    bottom: 10px;
+    left:50%;
+    transform: translateX(-50%);
+    
+}
+</style>
+<script>
+    $(document).ready(function(){
+    var cartCountValue = null;
+    var cartCount = $('.cart .count');
+    $(cartCount).text(cartCountValue);
+
+    $('.cart-btn').on('click', function(){
+        var cartBtn = this;
+        var cartCountPosition= $(cartCount).offset();
+        var btnPosition = $(this).offset();
+        var leftPos =
+        cartCountPosition.left < btnPosition.left
+        ? btnPosition.left - (btnPosition.left - cartCountPosition.left)
+        : cartCountPosition.left;
+
+        var topPos =
+        cartCountPosition.top < btnPosition.top
+        ? cartCountPosition.top
+        :cartCountPosition.top;
+        $(cartBtn)
+        .append("<span class='count'>1</span>");
+
+        $(cartBtn).find(".count").each(function(i, count){
+            $(count).offset({
+                left:leftPos,
+                top:topPos
+            })
+            .animate(
+            {
+                opcity:0
+            }, 
+            800,
+            function(){
+                $(this).remove();
+                cartCountValue++;
+                $(cartCount).text(cartCountValue);
+            }
+            );
+        });
+});
+   $('.cart-btn2').on('click', function(){
+        var cartBtn = this;
+        var cartCountPosition= $(cartCount).offset();
+        var btnPosition = $(this).offset();
+        var leftPos =
+        cartCountPosition.left < btnPosition.left
+        ? btnPosition.left - (btnPosition.left - cartCountPosition.left)
+        : cartCountPosition.left;
+
+        var topPos =
+        cartCountPosition.top < btnPosition.top
+        ? cartCountPosition.top
+        :cartCountPosition.top;
+        $(cartBtn)
+        .append("<span class='count'>1</span>");
+
+        $(cartBtn).find(".count").each(function(i, count){
+            $(count).offset({
+                left:leftPos,
+                top:topPos
+            })
+            .animate(
+            {
+                opcity:0
+            }, 
+            800,
+            function(){
+                $(this).remove();
+                cartCountValue++;
+                $(cartCount).text(cartCountValue);
+            }
+            );
+        });
+});
+   $('.cart-btn3').on('click', function(){
+        var cartBtn = this;
+        var cartCountPosition= $(cartCount).offset();
+        var btnPosition = $(this).offset();
+        var leftPos =
+        cartCountPosition.left < btnPosition.left
+        ? btnPosition.left - (btnPosition.left - cartCountPosition.left)
+        : cartCountPosition.left;
+
+        var topPos =
+        cartCountPosition.top < btnPosition.top
+        ? cartCountPosition.top
+        :cartCountPosition.top;
+        $(cartBtn)
+        .append("<span class='count'>1</span>");
+
+        $(cartBtn).find(".count").each(function(i, count){
+            $(count).offset({
+                left:leftPos,
+                top:topPos
+            })
+            .animate(
+            {
+                opcity:0
+            }, 
+            800,
+            function(){
+                $(this).remove();
+                cartCountValue++;
+                $(cartCount).text(cartCountValue);
+            }
+            );
+        });
+});
+   $('.cart-btn4').on('click', function(){
+        var cartBtn = this;
+        var cartCountPosition= $(cartCount).offset();
+        var btnPosition = $(this).offset();
+        var leftPos =
+        cartCountPosition.left < btnPosition.left
+        ? btnPosition.left - (btnPosition.left - cartCountPosition.left)
+        : cartCountPosition.left;
+
+        var topPos =
+        cartCountPosition.top < btnPosition.top
+        ? cartCountPosition.top
+        :cartCountPosition.top;
+        $(cartBtn)
+        .append("<span class='count'>1</span>");
+
+        $(cartBtn).find(".count").each(function(i, count){
+            $(count).offset({
+                left:leftPos,
+                top:topPos
+            })
+            .animate(
+            {
+                opcity:0
+            }, 
+            800,
+            function(){
+                $(this).remove();
+                cartCountValue++;
+                $(cartCount).text(cartCountValue);
+            }
+            );
+        });
+});
+   $('.cart-btn5').on('click', function(){
+        var cartBtn = this;
+        var cartCountPosition= $(cartCount).offset();
+        var btnPosition = $(this).offset();
+        var leftPos =
+        cartCountPosition.left < btnPosition.left
+        ? btnPosition.left - (btnPosition.left - cartCountPosition.left)
+        : cartCountPosition.left;
+
+        var topPos =
+        cartCountPosition.top < btnPosition.top
+        ? cartCountPosition.top
+        :cartCountPosition.top;
+        $(cartBtn)
+        .append("<span class='count'>1</span>");
+
+        $(cartBtn).find(".count").each(function(i, count){
+            $(count).offset({
+                left:leftPos,
+                top:topPos
+            })
+            .animate(
+            {
+                opcity:0
+            }, 
+            800,
+            function(){
+                $(this).remove();
+                cartCountValue++;
+                $(cartCount).text(cartCountValue);
+            }
+            );
+        });
+});
+   $('.cart-btn6').on('click', function(){
+        var cartBtn = this;
+        var cartCountPosition= $(cartCount).offset();
+        var btnPosition = $(this).offset();
+        var leftPos =
+        cartCountPosition.left < btnPosition.left
+        ? btnPosition.left - (btnPosition.left - cartCountPosition.left)
+        : cartCountPosition.left;
+
+        var topPos =
+        cartCountPosition.top < btnPosition.top
+        ? cartCountPosition.top
+        :cartCountPosition.top;
+        $(cartBtn)
+        .append("<span class='count'>1</span>");
+
+        $(cartBtn).find(".count").each(function(i, count){
+            $(count).offset({
+                left:leftPos,
+                top:topPos
+            })
+            .animate(
+            {
+                opcity:0
+            }, 
+            800,
+            function(){
+                $(this).remove();
+                cartCountValue++;
+                $(cartCount).text(cartCountValue);
+            }
+            );
+        });
+});
+   $('.cart-btn7').on('click', function(){
+        var cartBtn = this;
+        var cartCountPosition= $(cartCount).offset();
+        var btnPosition = $(this).offset();
+        var leftPos =
+        cartCountPosition.left < btnPosition.left
+        ? btnPosition.left - (btnPosition.left - cartCountPosition.left)
+        : cartCountPosition.left;
+
+        var topPos =
+        cartCountPosition.top < btnPosition.top
+        ? cartCountPosition.top
+        :cartCountPosition.top;
+        $(cartBtn)
+        .append("<span class='count'>1</span>");
+
+        $(cartBtn).find(".count").each(function(i, count){
+            $(count).offset({
+                left:leftPos,
+                top:topPos
+            })
+            .animate(
+            {
+                opcity:0
+            }, 
+            800,
+            function(){
+                $(this).remove();
+                cartCountValue++;
+                $(cartCount).text(cartCountValue);
+            }
+            );
+        });
+});
+
+    $('.cart-btn8').on('click', function(){
+        var cartBtn = this;
+        var cartCountPosition= $(cartCount).offset();
+        var btnPosition = $(this).offset();
+        var leftPos =
+        cartCountPosition.left < btnPosition.left
+        ? btnPosition.left - (btnPosition.left - cartCountPosition.left)
+        : cartCountPosition.left;
+
+        var topPos =
+        cartCountPosition.top < btnPosition.top
+        ? cartCountPosition.top
+        :cartCountPosition.top;
+        $(cartBtn)
+        .append("<span class='count'>1</span>");
+
+        $(cartBtn).find(".count").each(function(i, count){
+            $(count).offset({
+                left:leftPos,
+                top:topPos
+            })
+            .animate(
+            {
+                opcity:0
+            }, 
+            800,
+            function(){
+                $(this).remove();
+                cartCountValue++;
+                $(cartCount).text(cartCountValue);
+            }
+            );
+        });
+});
+   $('.cart-btn9').on('click', function(){
+        var cartBtn = this;
+        var cartCountPosition= $(cartCount).offset();
+        var btnPosition = $(this).offset();
+        var leftPos =
+        cartCountPosition.left < btnPosition.left
+        ? btnPosition.left - (btnPosition.left - cartCountPosition.left)
+        : cartCountPosition.left;
+
+        var topPos =
+        cartCountPosition.top < btnPosition.top
+        ? cartCountPosition.top
+        :cartCountPosition.top;
+        $(cartBtn)
+        .append("<span class='count'>1</span>");
+
+        $(cartBtn).find(".count").each(function(i, count){
+            $(count).offset({
+                left:leftPos,
+                top:topPos
+            })
+            .animate(
+            {
+                opcity:0
+            }, 
+            800,
+            function(){
+                $(this).remove();
+                cartCountValue++;
+                $(cartCount).text(cartCountValue);
+            }
+            );
+        });
+});
+  $('.cart-btn10').on('click', function(){
+        var cartBtn = this;
+        var cartCountPosition= $(cartCount).offset();
+        var btnPosition = $(this).offset();
+        var leftPos =
+        cartCountPosition.left < btnPosition.left
+        ? btnPosition.left - (btnPosition.left - cartCountPosition.left)
+        : cartCountPosition.left;
+
+        var topPos =
+        cartCountPosition.top < btnPosition.top
+        ? cartCountPosition.top
+        :cartCountPosition.top;
+        $(cartBtn)
+        .append("<span class='count'>1</span>");
+
+        $(cartBtn).find(".count").each(function(i, count){
+            $(count).offset({
+                left:leftPos,
+                top:topPos
+            })
+            .animate(
+            {
+                opcity:0
+            }, 
+            800,
+            function(){
+                $(this).remove();
+                cartCountValue++;
+                $(cartCount).text(cartCountValue);
+            }
+            );
+        });
+});
+  $('.cart-btn11').on('click', function(){
+        var cartBtn = this;
+        var cartCountPosition= $(cartCount).offset();
+        var btnPosition = $(this).offset();
+        var leftPos =
+        cartCountPosition.left < btnPosition.left
+        ? btnPosition.left - (btnPosition.left - cartCountPosition.left)
+        : cartCountPosition.left;
+
+        var topPos =
+        cartCountPosition.top < btnPosition.top
+        ? cartCountPosition.top
+        :cartCountPosition.top;
+        $(cartBtn)
+        .append("<span class='count'>1</span>");
+
+        $(cartBtn).find(".count").each(function(i, count){
+            $(count).offset({
+                left:leftPos,
+                top:topPos
+            })
+            .animate(
+            {
+                opcity:0
+            }, 
+            800,
+            function(){
+                $(this).remove();
+                cartCountValue++;
+                $(cartCount).text(cartCountValue);
+            }
+            );
+        });
+});
+   $('.cart-btn12').on('click', function(){
+        var cartBtn = this;
+        var cartCountPosition= $(cartCount).offset();
+        var btnPosition = $(this).offset();
+        var leftPos =
+        cartCountPosition.left < btnPosition.left
+        ? btnPosition.left - (btnPosition.left - cartCountPosition.left)
+        : cartCountPosition.left;
+
+        var topPos =
+        cartCountPosition.top < btnPosition.top
+        ? cartCountPosition.top
+        :cartCountPosition.top;
+        $(cartBtn)
+        .append("<span class='count'>1</span>");
+
+        $(cartBtn).find(".count").each(function(i, count){
+            $(count).offset({
+                left:leftPos,
+                top:topPos
+            })
+            .animate(
+            {
+                opcity:0
+            }, 
+            800,
+            function(){
+                $(this).remove();
+                cartCountValue++;
+                $(cartCount).text(cartCountValue);
+            }
+            );
+        });
+});
+});
+</script>
+</html>
